@@ -1,0 +1,87 @@
+/* ============================================================
+   GUHANIX SMARTCARD V1  ·  Design Tokens
+   Single source of truth for all visual values.
+   Import this first in app.css.
+   ============================================================ */
+
+:root {
+
+  /* ── Surfaces ─────────────────────────────────────────── */
+  --s0:  #040404;   /* deepest black — card body              */
+  --s1:  #090909;   /* panel background                       */
+  --s2:  #101010;   /* elevated surface                       */
+  --s3:  #181818;   /* input / numpad key                     */
+  --s4:  #222222;   /* hover state surface                    */
+
+  /* ── Gold ─────────────────────────────────────────────── */
+  --g1:  #BF9B30;   /* dark gold — shadows                    */
+  --g2:  #D4AF37;   /* base gold                              */
+  --g3:  #EDD060;   /* bright gold — highlights               */
+  --g4:  #F7E9A0;   /* champagne                              */
+
+  /* ── Silver ───────────────────────────────────────────── */
+  --v1:  #8A8A9A;   /* dim silver                             */
+  --v2:  #B0B0C4;   /* mid silver                             */
+  --v3:  #D0D0E0;   /* bright silver                          */
+  --v4:  #EEEEF6;   /* near white silver                      */
+
+  /* ── Semantic text ────────────────────────────────────── */
+  --txt-primary:   var(--v4);          /* main readable text */
+  --txt-secondary: var(--v2);          /* sub text           */
+  --txt-muted:     rgba(180,165,120,0.55); /* labels, hints  */
+  --txt-gold:      var(--g3);          /* gold text          */
+
+  /* ── Semantic states ──────────────────────────────────── */
+  --ok:   #3DB87A;
+  --ok-bg: rgba(61,184,122,0.10);
+  --ok-bd: rgba(61,184,122,0.22);
+  --err:  #D05050;
+  --err-bg: rgba(208,80,80,0.10);
+  --err-bd: rgba(208,80,80,0.22);
+
+  /* ── Gradients ────────────────────────────────────────── */
+  --gg:  linear-gradient(135deg, var(--g1) 0%, var(--g3) 45%, var(--g2) 100%);
+  --gsg: linear-gradient(135deg, var(--g2) 0%, var(--g4) 28%,
+                                 var(--v3) 52%, var(--v2) 72%, var(--g2) 100%);
+  --gs:  linear-gradient(135deg, var(--v3) 0%, var(--v4) 40%, var(--v2) 100%);
+
+  /* ── Borders ──────────────────────────────────────────── */
+  --bd-gold:   rgba(212,175,55,0.18);
+  --bd-silver: rgba(200,200,220,0.12);
+  --bd-active: rgba(212,175,55,0.40);
+
+  /* ── Spacing scale (vh-based so it fills screen) ─────── */
+  --sp-1: 0.6vh;
+  --sp-2: 1.2vh;
+  --sp-3: 1.8vh;
+  --sp-4: 2.4vh;
+  --sp-5: 3.2vh;
+  --sp-6: 4.0vh;
+
+  /* ── Horizontal spacing ───────────────────────────────── */
+  --px:   2.6vw;    /* screen edge padding                    */
+  --gap:  1.0vw;    /* grid / flex gap                        */
+
+  /* ── Type scale ───────────────────────────────────────── */
+  --t-xs:  clamp(6.5px, 0.95vh, 9px);
+  --t-sm:  clamp(8px,   1.30vh, 11px);
+  --t-md:  clamp(10px,  1.70vh, 14px);
+  --t-lg:  clamp(13px,  2.20vh, 18px);
+  --t-xl:  clamp(18px,  3.80vh, 36px);
+  --t-2xl: clamp(32px,  7.50vh, 76px);
+
+  /* ── Radius ───────────────────────────────────────────── */
+  --r-sm: 0.6vw;
+  --r-md: 1.0vw;
+  --r-lg: 1.5vw;
+
+  /* ── Transitions ──────────────────────────────────────── */
+  --ease: cubic-bezier(.4, 0, .2, 1);
+  --dur-fast: 0.15s;
+  --dur-mid:  0.30s;
+  --dur-slow: 0.42s;
+
+  /* ── Status bar height (used by layout AND sbar itself) ─ */
+  --sbar-h: 5.5vh;
+  --sbar-h-min: 30px;
+}
